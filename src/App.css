@@ -2,37 +2,429 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Base.css */
+/* .main-container {
+  
+} */
+
+
+.custom-app-bar {
+  background: linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.custom-app-bar-toolbar {
+  justify-content: center;
+}
+
+.custom-app-bar-title {
+  flex-grow: 1;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.custom-icon-button {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+/* Add styling for the form container */
+.add-notes-form {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f7f7f7;
+}
+
+/* Style the button */
+.add-notes-button {
+  background-color: #eaff00;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 100px;
+}
+
+.add-notes-button:hover {
+  background-color: #0056b3;
+}
+
+/* Style the error and success messages */
+.color-error {
+  color: red;
+}
+
+.color-success {
+  color: green;
+}
+
+/* Style the dashboard container */
+.dashboard-container {
+  /* background: #f7f7f7; */
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+}
+
+
+.notes-container {
+  /* background-color: #ffffff95; */
+  padding: 20px;
+  width: 1200px;
+  font-family: 'Times New Roman', Times, serif;
+  margin: 0 auto;
+  border-radius: 4px;
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  color: black;
+  font-weight: 500;
+  font-size: large;
+
+}
+
+/* Style for individual questions */
+.custom-paper {
+  background-color: #2196F3;
+  padding: 16px;
+  margin-bottom: 16px;
+
+}
+
+
+
+.note-card {
+  background: #ffffff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 10px 0;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the error message */
+.color-danger {
+  color: red;
+}
+
+/* Add the 3D animation to the background */
+body {
+  background: linear-gradient(45deg, #3498db, #e74c3c, #9b59b6, #e74c3c);
+  background-size: 400% 400%;
+  animation: gradientAnimation 15s ease infinite;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* loginpage */
+.box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+}
+
+.lo {
+  margin-top: 20px;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 500;
+  font-size: medium;
+}
+
+.form {
+
+  height: 350px;
+  width: 500px;
+  padding: 20px;
+  justify-content: space-evenly;
+  border-radius: 20px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+  background-color: #be9a9a;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.form input {
+  width: 100%;
+  margin-bottom: 10px;
+  border-radius: 40px;
+}
+
+.form button {
+  /* width: 50%; */
+  margin-top: 10px;
+  /* border-radius: 10px; */
+}
+
+.error {
+  margin-top: 10px;
+  color: red;
+}
+
+/* Style the error message */
+.color-danger {
+  color: red;
+}
+
+/* Add the 3D animation to the background */
+body {
+  background: linear-gradient(45deg, #3498db, #e74c3c, #9b59b6, #e74c3c);
+  background-size: 400% 400%;
+  animation: gradientAnimation 15s ease infinite;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Style the main container */
+/* signuppage */
+.main {
+
+  background-size: 400% 400%;
+  animation: gradientAnimation 15s ease infinite;
+  height: 100vh;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Style the signup form */
+.log {
+  margin-top: 10px;
+}
+
+.signup-form {
+  background: #be9a9a;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  width: 600px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.sign {
+  margin-top: 20px;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 500;
+  font-size: medium;
+}
+
+/* Style input fields and button */
+input {
+  width: 90%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+}
+
+button {
+  background-color: #ff6600;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #ff3366;
+}
+
+.error-message {
+  color: red;
+  margin-top: 10px;
+}
+
+.paper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 16px;
+  margin-bottom: 16px;
+  margin-left: 410px;
+  align-content: center;
+  width: 1500px;
+  height: 500px;
+
+}
+
+/* .paper {
+  display: grid;
+  grid-template-rows: repeat(3fr, 1);
+
+  padding: 16px;
+  margin-bottom: 16px;
+
+
+} */
+
+.paper p {
+  margin: 4px 0;
+
+}
+
+.paper Button {
+  margin: 8px 4px;
+
+}
+
+/* editcss */
+form {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f7f7f7;
+}
+
+
+TextField {
+  margin: 8px 0;
+}
+
+
+Button {
+  margin: 16px 8px;
+  gap: 50px;
+}
+
+.btn3 {
+  display: flex;
+  gap: 10px;
+  margin-left: 80px;
+  margin-top: 20px;
+
+}
+
+
+Typography {
+  margin-top: 8px;
+  text-align: center;
+}
+
+
+/* Apply these styles for screen widths between 370px and 1300px */
+/* @media screen and (min-width: 370px) and (max-width: 1300px) {
+  .App {}
+
+  .App-header {}
+
+  .App-link {}
+
+
+  .main-container {}
+
+  .custom-app-bar {}
+
+  .custom-app-bar-toolbar {}
+
+  .custom-app-bar-title {}
+
+  .custom-icon-button {}
+
+
+  .add-notes-form {}
+
+  .add-notes-button {}
+
+  .add-notes-button:hover {}
+
+  .color-error {}
+
+  .color-success {}
+
+
+  .dashboard-container {}
+
+  .notes-container {}
+
+  .custom-paper {}
+
+  .note-card {}
+
+  .color-danger {}
+
+}
+ */
+
+
+.bt {
+  display: flex;
+  gap: 10px;
+}
+
+.bt {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.bt Button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 5px 5px;
+  border: 1px solid black;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.bt Button:hover {
+  background-color: #0056b3;
+
 }
