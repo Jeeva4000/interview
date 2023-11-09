@@ -37,7 +37,7 @@ const EditPage = ({ userData, setUserData }) => {
             questions
         }
 
-        const res = await fetch(`http://localhost:9000/api/notes/edit/${id}`, {
+        const res = await fetch(`https://interview2.onrender.com/api/notes/edit/${id}`, {
             method: "PUT",
             body: JSON.stringify(editedNotes),
             headers: {

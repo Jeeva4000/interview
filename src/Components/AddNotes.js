@@ -30,7 +30,7 @@ const Addnotes = ({ userData, setUserData }) => {
             questions,
             postedBy: userData.name
         }
-        const res = await fetch(`http://localhost:9000/api/notes/add`, {
+        const res = await fetch(`https://interview2.onrender.com/api/notes/add`, {
             method: "POST",
             body: JSON.stringify(newNotes),
             headers: {

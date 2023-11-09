@@ -12,7 +12,7 @@ const Dashboard = () => {
         }
         let token = localStorage.getItem("token")
         const fetchAllData = async () => {
-            const res = await fetch(`http://localhost:9000/api/notes/all`, {
+            const res = await fetch(`https://interview2.onrender.com/api/notes/all`, {
                 method: "GET",
                 headers: {
                     "x-auth-token": token

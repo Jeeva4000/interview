@@ -21,7 +21,7 @@ const SignupPage = () => {
 
         try {
 
-            const response = await fetch('http://localhost:9000/api/user/signup', {
+            const response = await fetch('https://interview2.onrender.com/api/user/signup', {
                 method: 'POST',
                 body: JSON.stringify(userDetail),
                 headers: {

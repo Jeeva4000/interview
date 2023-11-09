@@ -18,7 +18,7 @@ const UserPage = ({ userData, setUserData }) => {
         let token = localStorage.getItem("token")
         setTokenId(token)
         const fetchUserData = async () => {
-            const res = await fetch(`http://localhost:9000/api/notes/user`, {
+            const res = await fetch(`https://interview2.onrender.com/api/notes/user`, {
                 method: "GET",
                 headers: {
                     "x-auth-token": token
