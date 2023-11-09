@@ -33,7 +33,7 @@ const UserPage = ({ userData, setUserData }) => {
             console.log(userData)
         }
         fetchUserData()
-    }, [])
+    }, [navigate, setUserData, userData])
 
 
     return (

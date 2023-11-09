@@ -27,7 +27,7 @@ const Dashboard = () => {
             console.log(notes)
         }
         fetchAllData()
-    }, [])
+    }, [navigate, notes])
     return (
         <div className="dashboard-container">
             <Base>
