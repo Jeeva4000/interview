@@ -4,10 +4,22 @@ import { useNavigate } from 'react-router-dom'
 
 function Base({ title, description, children }) {
     //const history = useHistory() v5
+    // const navigate = useNavigate()
+    // function handleLogut() {
+    //     localStorage.removeItem("token")
+    //     navigate("/login")
+    // }
     const navigate = useNavigate()
-    function handleLogut() {
-        localStorage.removeItem("token")
-        navigate("/login")
+    let tokenId = localStorage.getItem("token")
+    function handleAuthentication() {
+        if (tokenId) {
+
+            localStorage.removeItem("token");
+            navigate("/login");
+        } else {
+
+            navigate("/login");
+        }
     }
     return (
         <div className='main-container'>
@@ -49,14 +61,14 @@ function Base({ title, description, children }) {
                                 MyAccount
                             </IconButton>
 
-                            <IconButton
+                            {/* <IconButton
                                 edge="end"
                                 color="inherit"
                                 aria-label="add students"
                                 onClick={() => navigate("/login")}
                                 sx={{ mr: 2 }}>
                                 Login
-                            </IconButton>
+                            </IconButton> */}
 
                             <IconButton
                                 edge="end"
@@ -67,13 +79,22 @@ function Base({ title, description, children }) {
                                 Signup
                             </IconButton>
 
-                            <IconButton
+                            {/* <IconButton
                                 edge="end"
                                 color="inherit"
                                 aria-label="add students"
                                 onClick={handleLogut}
                                 sx={{ mr: 2 }}>
                                 logout
+                            </IconButton> */}
+                            <IconButton
+                                edge="end"
+                                color="inherit"
+                                aria-label={tokenId ? "logout" : "login"}
+                                onClick={handleAuthentication}
+                                sx={{ mr: 2 }}
+                            >
+                                {tokenId ? "Logout" : "Login"}
                             </IconButton>
 
                         </Toolbar>
