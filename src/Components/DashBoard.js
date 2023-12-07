@@ -52,7 +52,8 @@ const Dashboard = () => {
                                 <p>Package: {data.package}</p>
                                 <p>Skills: {data.skills}</p>
                                 <p>Questions: {data.questions}</p>
-                                <p>Posted by: {data.user.name}</p>
+                                {/* <p>Posted by: {data.user.name}</p> */}
+                                <p>Posted by: {data.user ? data.user.name : 'Unknown User'}</p>
                                 <p>Date: {data.date}</p>
                             </Paper>
 

@@ -92,6 +92,11 @@ const LoginPage = () => {
                         <span>Don't have an account? </span>
                         <Link to="/signup">Sign Up</Link>
                     </div>
+                    <div>
+                        <h2>For Testing:</h2>
+                        <h3>Email:jeeva@gmail.com   </h3>
+                        <h3>Password: 12345  </h3>
+                    </div>
                 </div>
             </div>
         </Base>
