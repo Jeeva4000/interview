@@ -31,7 +31,11 @@ const LoginPage = () => {
             setError(data.message)
         }
     }
+    const handleDemoLogin = () => {
 
+        setEmail("jeeva@gmail.com ");
+        setPassword("12345");
+    };
     return (
 
         // <Base>
@@ -84,6 +88,13 @@ const LoginPage = () => {
                         variant="contained"
                         onClick={handleLogin}
                     >Login</Button>
+                    <Button
+                        variant="contained"
+                        onClick={handleDemoLogin}
+                        sx={{ mt: 2 }}
+                    >
+                        Demo Credentials
+                    </Button>
                     {error ?
                         <Typography className="error" color={"danger"}>
                             {error}
@@ -92,11 +103,11 @@ const LoginPage = () => {
                         <span>Don't have an account? </span>
                         <Link to="/signup">Sign Up</Link>
                     </div>
-                    <div>
+                    {/* <div>
                         <h2>For Testing:</h2>
                         <h3>Email:jeeva@gmail.com   </h3>
                         <h3>Password: 12345  </h3>
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </Base>
